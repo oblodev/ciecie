@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*
+{
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CLEARFIX */
+
+nav::before,
+nav::after 
+{
+	content:"";
+	display: table ;
+	clear: both;
+ }
+
+/* BODY */
+
+body
+{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  HERO  */
+
+header
+{
+    background-image: url(img/cherry-laithang-312590.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+header h2
+{
+    width: 30%;
+    margin: 0;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+
+header h2 span
+{
+    color: palevioletred;
+}
+
+header>nav ul
+{
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+.head
+{
+    display: table;
+    width: 100%;
+}
+
+nav ul>li
+{
+    display: inline;
+    line-height: 80px;
+}
+
+nav ul>li>a
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 7px;
+}
+
+nav ul>li>a:hover
+{
+    color: palevioletred;
+    transition: 0.4s;
+}
+
+.hero
+{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 75px;
+    color: #fff;
+}
+
+.hero h1
+{
+    font-size: 39px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.hero h1 span
+{
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.hero p
+{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.hero p:nth-child(2)
+{
+    margin: 0;
+    padding: 10px;
+    color: palevioletred;
+}
+
+
+.show
+{
+    background-color: palevioletred;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 25px
+}
+
+.show p
+{
+    margin: 0;
+}
+
+.show:hover
+{
+    cursor: pointer;
+}
+
+
+/* COLUMS  */
+
+.row::before,
+.row::after {
+	content:"";
+	display: table ;
+	clear: both;
+ }
+
+[class*="col-"]
+{
+    float: left;
+    min-height: 1px;
+    padding: 5px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+
+/*  UPPER  */
+
+.upper
+{
+    width: 100%;
+    height: 15px;
+    background-color: palevioletred;
+    position: relative;
+    display: table;
+}
+
+.upper:after
+{
+    content: '';
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    background: inherit;
+    z-index: ;
+    bottom: 0;
+    transform-origin: right bottom;
+    transform: skewY(-0.3deg);
+}
+
+.upp 
+{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F4F4F4;
+    height: 540px;
+}
+
+.upp .col-4
+{
+    height: auto;
+    float: left;
+    margin-top: 150px;
+}
+
+.upp .col-4 h2
+{
+    font-weight: 100;
+    font-size: 32px;
+    font-style: italic;
+    color: #5a5a5a;
+    margin-bottom: 0;
+}
+
+.upp .col-8 .jumbo
+{
+    background-image: url(img/MacBook.png);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    w
+    float: right;
+    margin-top: 80px;
+}
+
+.upp .col-4 p:nth-child(2)
+{
+    padding-bottom: 10px;
+    color: palevioletred;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.upp .col-4 p:nth-child(3)
+{
+    color: #5a5a5a;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.upp .col-4 p:nth-child(4)
+{
+    margin-top: 34px;
+}
+
+.upp .col-4 p>a
+{
+    text-decoration: none;
+    color: palevioletred;
+    font font-weight: 700;
+}
+
+.upp .col-4 p i
+{
+    font-size: 19px;
+    margin-left: 5px;
+}
+
+/*  INFORMER  */
+
+.informer
+{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.informer h1
+{
+    width: 135px;
+    margin: 0 auto;
+    padding-bottom: 22px;
+    border-bottom: 2px solid palevioletred;;
+    font-weight: 400;
+    color: #5a5a5a;
+    font-size: 24px;
+}
+
+.informer p
+{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 22px;
+    color: #5a5a5a;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/* ICONS  */
+
+.icons
+{
+    margin-top: 100px;
+}
+
+.icons .col-3
+{
+    text-align: center;
+}
+
+.icons .col-3 h4
+{
+    color: palevioletred;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* BREAKER */
+.breaker
+{
+    width: 100%;
+    height: 400px;
+    background-image: url(img/cherry-laithang-312590.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table;
+    margin-top: 90px;
+}
+
+.breaker p
+{
+    color: #F4F4F4;
+    text-align: center;
+    padding-top: 180px;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #F4F4F4;
+}
